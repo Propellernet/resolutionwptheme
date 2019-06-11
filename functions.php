@@ -10,6 +10,12 @@ function reading_time( $post_id ) {
 	return $reading_time . ' minute';
 }
 
+function add_bootstrap_responsive_image_class($class){
+    $class .= ' img-fluid mb-3';
+    return $class;
+}
+add_filter('get_image_tag_class','add_bootstrap_responsive_image_class');
+
 add_theme_support( 'post-thumbnails' );
 wp_enqueue_style( 'coveragebook-style', get_stylesheet_uri() );
 
