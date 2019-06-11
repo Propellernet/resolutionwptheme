@@ -1,5 +1,6 @@
 <?php
   $args = array(
+            'format'             => '?page=%#%',
             'mid_size'           => 2,
             'prev_next'          => true,
             'prev_text'          => '&laquo;',
