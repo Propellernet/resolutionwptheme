@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col col-lg-8">
-        <h4 class="h3"><a href="/" class="text-white">The Resolution by CoverageBook</a></h4>
+        <h4 class="h3"><a href="/blog/" class="text-white">The Resolution by CoverageBook</a></h4>
         <p class="mb-0">Making the lives of hard working PRs better</p>
       </div>
 
