@@ -46,12 +46,6 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="row">
-			    <div class="col-lg-8 col-xl-7">
-			      <hr class="hr" />
-			    </div>
-			  </div>
 			</article><!-- #post-<?php the_ID(); ?> -->
 		</div><!-- .container -->
 	<?php endwhile; ?>
