@@ -23,5 +23,6 @@
 
 <?php wp_footer(); ?>
 
+<script async data-uid="b081efd952" src="https://f.convertkit.com/b081efd952/f5147b79b0.js"></script>
 </body>
 </html>
