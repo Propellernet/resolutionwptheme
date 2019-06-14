@@ -32,7 +32,6 @@
             <?php while ($latest_posts -> have_posts()) : $latest_posts -> the_post(); ?>
               <small><?php the_date(); ?></small>
               <h2 class="h5"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-              <?php the_excerpt('(more…)'); ?>
             <?php endwhile; ?>
             <p><a href="/archive">More of our writing</a></p>
 					</div>
