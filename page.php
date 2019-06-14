@@ -32,7 +32,7 @@
 
 					<div class="col-sm-3 offset-lg-1 d-none d-lg-block">
 						<div class="card mb-5">
-							<a href="https://podcast.coveragebook.com/?utm_source=blog&utm_campaign=blog_article" class="stretched-link"><img src="<?php echo get_theme_file_uri('assets/images/podcast-square.jpg') ?>" class="card-img-top" alt="PR Reporting for the 2st Century"></a>
+							<a href="https://podcast.coveragebook.com/?utm_source=blog&utm_campaign=blog_article" class="stretched-link"><img src="<?php echo get_theme_file_uri('assets/images/podcast.jpg') ?>" class="card-img-top" alt="PR Reporting for the 2st Century"></a>
 							<div class="card-body">
 								<p class="card-text">Stella interviews experts from across the PR industry and beyond.</p>
 							</div>
