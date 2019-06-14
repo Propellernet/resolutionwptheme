@@ -10,7 +10,7 @@
 		  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		    <header>
 		      <div class="row">
-		        <div class="col col-md-6 mt-5">
+		        <div class="col-md-10 col-lg-6 mt-5">
 		          <h1 class="display-4 d-none d-sm-block"><?php the_title(); ?></h1>
 		          <h1 class="d-sm-none"><?php the_title(); ?></h1>
 
@@ -20,13 +20,13 @@
 		    </header>
 
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-10 col-lg-6">
 		    		<div class="entry-content">
 		      		<?php the_content(); ?>
 		    		</div><!-- .entry-content -->
           </div>
 
-          <div class="col-md-6">
+          <div class="col-lg-6">
             <h3>Our latest posts</h3>
             <?php $latest_posts = new WP_Query( array( 'posts_per_page' => 3 )); ?>
             <?php while ($latest_posts -> have_posts()) : $latest_posts -> the_post(); ?>
@@ -42,7 +42,7 @@
 
   <div class="container">
     <div class="row mt-5">
-      <div class="col-sm-3">
+      <div class="col-sm-6 col-lg-3">
         <div class="card mb-5">
           <a data-formkit-toggle="b081efd952" href="https://pages.convertkit.com/b081efd952/f5147b79b0" class="stretched-link">
             <img src="<?php echo get_theme_file_uri('assets/images/resolution.jpg') ?>" class="card-img-top" alt="PR Reporting for the 2st Century">
@@ -53,7 +53,7 @@
         </div>
       </div>
 
-			<div class="col-sm-3">
+			<div class="col-sm-6 col-lg-3">
 				<div class="card mb-5">
 					<a href="https://podcast.coveragebook.com/?utm_source=blog&utm_campaign=blog_article" class="stretched-link">
             <img src="<?php echo get_theme_file_uri('assets/images/podcast.jpg') ?>" class="card-img-top" alt="The Resolution Podcast">
@@ -64,7 +64,7 @@
 				</div>
       </div>
 
-      <div class="col-sm-3">
+      <div class="col-sm-6 col-lg-3">
 				<div class="card mb-5">
 					<a href="#" class="stretched-link"><img src="<?php echo get_theme_file_uri('assets/images/book.jpg') ?>" class="card-img-top" alt="PR Reporting for the 2st Century"></a>
 					<div class="card-body">
@@ -73,7 +73,7 @@
 				</div>
       </div>
 
-      <div class="col-sm-3">
+      <div class="col-sm-6 col-lg-3">
 				<div class="card mb-5">
 					<a href="#" class="stretched-link"><img src="<?php echo get_theme_file_uri('assets/images/email-course.jpg') ?>" class="card-img-top" alt="PR Reporting for the 2st Century"></a>
 					<div class="card-body">
