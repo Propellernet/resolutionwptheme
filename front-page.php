@@ -28,7 +28,7 @@
 
           <div class="col-md-6">
             <h3>Our latest posts</h3>
-            <?php $latest_posts = new WP_Query( 'posts_per_page=5' ); ?>
+            <?php $latest_posts = new WP_Query( array( 'posts_per_page' => 3 )); ?>
             <?php while ($latest_posts -> have_posts()) : $latest_posts -> the_post(); ?>
               <small><?php the_date(); ?></small>
               <h2 class="h5"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
