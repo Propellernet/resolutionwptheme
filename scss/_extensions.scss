@@ -1,0 +1,86 @@
+// extensions
+
+// lock max-width of the container
+.container-fluid {
+  width: 95%;
+  max-width: 1480px;
+}
+
+.nav-logo {
+  max-width: 150px;
+}
+
+@include media-breakpoint-up(md) {
+  .nav-logo {
+    max-width: 240px;
+  }
+}
+
+// nav pills underlined instead of pills
+.nav-pills > .nav-item a.active, .nav-pills > .nav-item a.active:hover,
+.nav-pills > li > a:hover {
+  text-decoration: none;
+  border-radius:0px;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: $primary;
+  color: $black !important;
+  background-color: transparent !important;
+}
+
+.nav-pills > .nav-item a {
+  color: lighten($black, 40%);
+}
+
+
+// typography stuff
+.display-1, .display-2, .display-3, .display-4 {
+  letter-spacing: -0.0125em;
+}
+
+.text-uppercase { letter-spacing: 0.07em; }
+.text-sans { font-family: $font-family-sans-serif; }
+.text-serif { font-family: $font-family-serif; }
+
+@include media-breakpoint-down(sm) {
+
+  h1, .h1 { font-size: 1.5rem; }
+  h2, .h2 { font-size: 1.25rem; }
+  h3, .h3 { font-size: 1.125rem; }
+  h4, .h4 { font-size: 1rem; }
+  h5, .h5 { font-size: 0.875rem; }
+  h6, .h6 { font-size: 0.875rem; }
+
+  .lead { font-size: 1rem; font-weight: $font-weight-base; }
+
+  .display-4 { font-size: 1.5rem; }
+
+}
+
+
+
+
+// transparency
+.opacity-8 { opacity: 0.8; }
+.opacity-6 { opacity: 0.6; }
+.opacity-4 { opacity: 0.4; }
+
+
+
+
+// layers
+.layer-1 { z-index: 1 }
+.layer-2 { z-index: 2 }
+
+
+
+
+// decoration
+.border-dash {
+  width: 60px;
+  height: 8px;
+  background: inherit;
+  margin-bottom: 1.5rem;
+}
+
+

@@ -1,0 +1,100 @@
+// Overwrite Bootstrap's variables here
+// You can find them in node_modules/bootstrap/scss/_variables.scss
+// Copy the variables you need into this file, don't modify files under node_modules/
+
+// CB Brand pallete
+$brand-primary: #00C5A3;
+$brand-dark:    #028871;
+$brand-darker:  #1A4954;
+$brand-light:   #B8E3DB;
+$brand-lighter: #EBF7F5;
+
+// override existing colors
+$red:     #E2524C;
+$pink:    #F5EDED;
+$orange:  #F56022;
+$yellow:  #F4F1D8;
+
+// New
+$blush:   #EEC7C4;
+
+$colors: (
+  "blush":         $blush
+);
+
+$primary:       $red;
+$success:       $brand-dark;
+$light:         $brand-lighter;
+$dark:          $brand-darker;
+
+$theme-colors: (
+  "orange": $orange,
+  "blush": $blush,
+  "pink": $pink,
+  "yellow": $yellow
+);
+
+$body-color: $brand-darker;
+
+$paragraph-margin-bottom:   1.675rem;
+
+$enable-responsive-font-sizes: true;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 420px,
+  md: 600px,
+  lg: 992px,
+  xl: 1400px
+);
+
+$container-max-widths: (
+  sm: 400px,
+  md: 580px,
+  lg: 980px,
+  xl: 1380px
+);
+
+
+// Typography
+
+$font-family-sans-serif:      "Nunito Sans", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-serif:           "Merriweather", Georgia, serif;
+$font-family-base:            $font-family-serif;
+
+$line-height-base:            1.6875;
+
+$headings-font-family:        $font-family-serif;
+$headings-font-weight:        700;
+$headings-line-height:        1.3125;
+
+$display1-size:               7.5rem;
+$display2-size:               5.5rem !default;
+
+$display1-weight:             700 !default;
+$display2-weight:             700 !default;
+$display3-weight:             700 !default;
+$display4-weight:             700 !default;
+
+$blockquote-small-color:      $dark;
+$blockquote-font-size:        1rem;
+
+
+$input-btn-padding-y-lg:      1rem;
+$input-btn-font-size-lg:      1rem;
+$input-btn-font-family:       $font-family-sans-serif;
+
+$input-border-color:          $brand-dark;
+
+$btn-padding-y-lg:            1rem;
+$btn-padding-x-lg:            1.5rem;
+$btn-font-weight:             700;
+// $btn-border-radius:           1.5rem;
+// $btn-border-radius-lg:        2rem;
+// $btn-border-radius-sm:        1rem;
+
+
+$input-font-size-lg:          1rem;
+
+
+$navbar-nav-link-padding-x:   1rem;
