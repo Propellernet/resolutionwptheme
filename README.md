@@ -1,9 +1,29 @@
-CoveragePress
-=============
+# PR Resolution WordPress Theme
 
-A simple minimal WordPress theme built with only what is needed to serve our blog.
+For [resolution.coveragebook.com](https://resolution.coveragebook.com).
 
-A super minimal theme, doing the basics, _for us_.
+Uses [Gulp](https://gulpjs.com) to build a minimal CSS for the WordPress blog for CoverageBook.
 
-* Bootstrap styles built from a simple `gulp` builder
-* Minimal (no?) JS
+The theme itself is in the `prresolution` folder.
+
+## Installing
+
+```
+git clone git@github.com:Propellernet/resolutionwptheme.git
+cd resolutionwptheme
+bundle
+yarn
+```
+
+
+## Development Running locally
+
+Run...
+
+```
+bundle
+yarn
+gulp dev
+```
+
+And symlink the theme into a WordPress install using [Local by Flywheel](https://localbyflywheel.com).
