@@ -12,7 +12,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <link href="https://fonts.googleapis.com/css?family=Merriweather:300,700|Nunito+Sans:700&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="favicon.ico" />
+<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 
 <style>
 .bg-shapes-i-dots {
