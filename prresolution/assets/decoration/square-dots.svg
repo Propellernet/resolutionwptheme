@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 137 137">
+  <defs>
+    <pattern id="b" width="10.1" height="10.1" x="334.9" y="138.9" patternUnits="userSpaceOnUse">
+      <use transform="scale(.50578)" xlink:href="#a"/>
+    </pattern>
+    <image id="a" width="20" height="20" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGN5fIAKQAAAHlJREFUOBFjYBgFoyFAcggw4tPxv0Gb7fujn03///2LA6ljZGJaxCnHXsfYcPUXLn0suCRA4lDDymFqgAaXA8VA3AqYGDrNhC6AzIe5jJAYsjxeA5EVEsvGayAozNANwiaGrAZvGIIiABRmMK/DIgXZgFH2aAhQIQQAEbMpvMetTx4AAAAASUVORK5CYII="/>
+  </defs>
+  <path fill="url(#b)" fill-rule="evenodd" d="M345 149h145v145H345z" opacity=".8" transform="translate(-348 -152)"/>
+</svg>
