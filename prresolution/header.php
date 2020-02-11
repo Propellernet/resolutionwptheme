@@ -11,7 +11,66 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather&display=swap">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300,700|Nunito+Sans:700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="favicon.ico" />
+
+<style>
+.bg-shapes-i-dots {
+  background: url('<? echo get_theme_file_uri( 'assets/decoration/shapes-i-dots.svg' ) ?>') no-repeat center center;
+}
+
+.bg-shapes-i {
+  background: url('<? echo get_theme_file_uri( 'assets/decoration/shapes-i.svg' ) ?>') no-repeat center center;
+}
+
+.bg-wave-dots {
+  background: url('<? echo get_theme_file_uri( 'assets/decoration/wave-dots.svg' ) ?>') no-repeat bottom;
+  background-size: 100% auto;
+}
+
+@include media-breakpoint-up(md) {
+
+  .stripes {
+    background: url('<? echo get_theme_file_uri( 'assets/decoration/stripes.svg' ) ?>');
+    width: 86%;
+    height: 100%;
+    position: absolute;
+    bottom: -16px;
+    left: 0px;
+  }
+
+  .bg-curved-dots-left {
+    background: url('<? echo get_theme_file_uri( 'assets/decoration/curved-dots-a.svg' ) ?>') no-repeat left 100px, url('<? echo get_theme_file_uri( 'assets/decoration/curved-dots-b.svg' ) ?>') no-repeat right 200px;
+  }
+
+}
+
+@include media-breakpoint-up(lg) {
+
+  .bg-time-flies {
+    background: url('<? echo get_theme_file_uri( 'assets/decoration/time-flies.jpg' ) ?>') no-repeat right 20%, url('<? echo get_theme_file_uri( 'assets/decoration/shapes-i.svg' ) ?>') no-repeat -20px 105%;
+  }
+
+  .bg-stella {
+    background: url('/images/podcast/stella-coloured.jpg' ) ?>') no-repeat right 50px;
+  }
+
+  .stripes {
+    width: 92%;
+    bottom: -26px;
+    left: -6px;
+  }
+
+  .bg-shapes-i-dots-bottom {
+    background: url('<? echo get_theme_file_uri( 'assets/decoration/shapes-i-dots.svg' ) ?>') no-repeat 102% 105%;
+  }
+
+  .bg-shapes-i-bottom {
+    background: url('<? echo get_theme_file_uri( 'assets/decoration/shapes-i.svg' ) ?>') no-repeat -20px 105%;
+  }
+
+}
+</style>
 
 <?php wp_head(); ?>
 </head>
