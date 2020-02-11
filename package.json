@@ -12,8 +12,7 @@
     "jekyll"
   ],
   "author": "Andy Croll",
-  "license": "MIT",
-  "dependencies": {},
+  "license": "UNLICENSED",
   "devDependencies": {
     "autoprefixer": "*",
     "bootstrap": "^4.3.1",
@@ -22,6 +21,7 @@
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.0.0",
     "gulp-concat": "^2.6.1",
+    "gulp-header": "^2.0.9",
     "gulp-postcss": "^8.0.0",
     "gulp-purgecss": "^1.2.0",
     "gulp-rename": "^1.4.0",
