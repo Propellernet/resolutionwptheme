@@ -52,11 +52,8 @@
         <div class="row mt-5">
           <div class="col">
             <p>
-              Copyright © <?php echo date('Y') ?> CoverageBook<br />
-              <small>
-                a trading name of
-                <a target="_blank" href="http://www.propellernet.co.uk/" class="text-dark">Propellernet Ltd</a>
-              </small>
+              Copyright © <?php echo date('Y') ?> CoverageBook Ltd<br />
+          
             </p>
           </div>
         </div>
