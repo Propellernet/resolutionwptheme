@@ -19,4 +19,6 @@ add_filter('get_image_tag_class','add_bootstrap_responsive_image_class');
 add_theme_support( 'post-thumbnails' );
 
 wp_enqueue_style( 'stylesheet', get_stylesheet_uri() );
+
+add_theme_support( 'title-tag' );
 ?>

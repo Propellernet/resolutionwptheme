@@ -10,14 +10,16 @@
           <h1 class="display-4 text-serif"><?php the_title(); ?></h1>
           <h6 class="font-weight-normal">
             <time class="entry-date published" datetime="<?php the_date( DATE_W3C ) ?>">
-              <?php the_date() ?>
+              <?php echo the_time( get_option( 'date_format' ) ) ?>
             </time>
+            <!--
             <?php if ( get_the_time( 'Ymd' ) !== get_the_modified_time( 'Ymd' ) ) : ?>
               Updated at
               <time class="updated" datetime="<?php the_modified_date( DATE_W3C ) ?>">
                 <?php the_modified_date() ?>
               </time>
             <?php endif; ?>
+            -->
           </h6>
         </div>
       </div>

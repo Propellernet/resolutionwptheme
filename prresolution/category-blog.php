@@ -50,39 +50,45 @@ get_header(); ?>
 
 </div>
 
-<!-- latest article -->
-<?php $my_query = new WP_Query( 'category_name=blog&posts_per_page=1' ); ?>
-<?php while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
-<?php $featured_id = $post->ID; ?>
-<div class="bg-success text-white bg-curved-dots-left py-4 py-lg-5 mt-3 mt-lg-0">
-  <div class="container-fluid pb-lg-5">
-    <h3>Latest &mdash;</h3>
-    <div class="row mt-3 mt-lg-5 mx-lg-n4 mx-xl-n5">
-      <div class="col-lg-6 px-lg-4 px-xl-5">
-        <a href="<?php the_permalink(); ?>">
-          <?php the_post_thumbnail( 'large', ['class' => 'img-fluid mb-3'] ) ?>
-        </a>
-      </div>
-      <div class="col-lg-6 px-lg-4 px-xl-5">
-        <h6 class="text-sans text-uppercase text-blush opacity-8">
-          <?php echo reading_time( get_the_ID() ) ?> read
-        </h6>
-        <h2 class="h1">
-          <a href="<?php the_permalink(); ?>" class="text-white">
-            <?php the_title(); ?>
+<!-- latest article if page 1 -->
+<?php if ( intval( $paged ) == 0 ) : ?>
+  <?php $my_query = new WP_Query( 'category_name=blog&posts_per_page=1' ); ?>
+  <?php while ( $my_query->have_posts() ) : $my_query->the_post(); ?>
+  <?php $featured_id = $post->ID; ?>
+  <div class="bg-success text-white bg-curved-dots-left py-4 py-lg-5 mt-3 mt-lg-0 mb-lg-5">
+    <div class="container-fluid pb-lg-5">
+      <h3>Latest &mdash;</h3>
+      <div class="row mt-3 mt-lg-5 mx-lg-n4 mx-xl-n5">
+        <div class="col-lg-6 px-lg-4 px-xl-5">
+          <a href="<?php the_permalink(); ?>">
+            <?php the_post_thumbnail( 'large', ['class' => 'img-fluid mb-3'] ) ?>
           </a>
-        </h2>
-        <h6 class="text-sans font-weight-normal mt-3 mb-4">by <?php the_author() ?></h6>
-        <p class="opacity-8"><?php the_excerpt() ?></p>
-        <p><a href="<?php the_permalink(); ?>" class="btn btn-lg btn-outline-light">Read more...</a></p>
+        </div>
+        <div class="col-lg-6 px-lg-4 px-xl-5">
+          <h6 class="text-sans text-uppercase text-blush opacity-8">
+            <?php echo reading_time( get_the_ID() ) ?> read
+          </h6>
+          <h2 class="h1">
+            <a href="<?php the_permalink(); ?>" class="text-white">
+              <?php the_title(); ?>
+            </a>
+          </h2>
+          <h6 class="text-sans font-weight-normal mt-3 mb-4">by <?php the_author() ?></h6>
+          <p class="opacity-8"><?php the_excerpt() ?></p>
+          <p><a href="<?php the_permalink(); ?>" class="btn btn-lg btn-outline-light">Read more...</a></p>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<?php endwhile; ?>
+  <?php endwhile; ?>
+<?php endif; ?>
 
-<div class="container-fluid py-4 py-lg-5 my-3 my-lg-5">
-  <h4>Recent articles &mdash;</h4>
+<div class="container-fluid py-4 py-lg-5 mb-3">
+  <?php if ( intval( $paged ) == 0 ) : ?>
+    <h4>Recent articles &mdash;</h4>
+  <?php else : ?>
+    <h4>Page <?php echo $paged; ?></h4>
+  <?php endif; ?>
 
   <div class="row mx-lg-n4 mx-xl-n5">
     <?php while ( have_posts() ) : the_post(); ?>
@@ -103,9 +109,23 @@ get_header(); ?>
         <p class="mt-3"><?php the_excerpt() ?></p>
       </div>
     <?php endwhile; ?>
-
-    <!-- TODO PAGINATION  -->
   </div>
 </div>
+
+<div class="container-fluid py-4 py-lg-5 mb-3 mb-lg-5">
+  <div class="row mx-lg-n4 mx-xl-n5">
+    <div class="col text-right">
+      <?php if ( get_previous_posts_link() ) : ?>
+        <a href="<?php echo get_previous_posts_page_link(); ?>" class="btn btn-lg btn-outline-dark">Newer articles</a>
+      <?php endif; ?>
+    </div>
+    <div class="col text-left">
+      <?php if ( get_next_posts_link() ) : ?>
+        <a href="<?php echo get_next_posts_page_link(); ?>" class="btn btn-lg btn-outline-dark">Older articles</a>
+      <?php endif; ?>
+    </div>
+  </div>
+</div>
+
 
 <?php get_footer(); ?>
